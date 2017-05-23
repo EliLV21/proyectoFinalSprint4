@@ -4,48 +4,54 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/3634a5e73d.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>ProyectoFinal</title>
   </head>
   <body>
-    <header class="col-md-12" id="navBar">
-      <img src="assets/img/logoForma.png" class="logo" alt="">
-      <ul class="nav nav-pills navbar-right">
-        <li role="presentation" class="disabled"><a href="#">Viaja</a></li>
-        <li role="presentation" class="disabled"><a href="#">Conduce</a></li>
-        <li role="presentation" class="disabled"><a href="#">Inicia Sesión</a></li>
-      </ul>
-    </header>
-    <section class="container col-md-12" id="registro">
-      <section class="col-md-4 col-md-offset-8" id="seccionRegistro">
-        <h3>Disfruta del viaje<br>
-        Eres duseño de tu tiempo</h3>
-        <h4>Viaja con  <img src="assets/img/logoBlanco.png" class="logoBlanco"></h4>
-        <button type="button" class="btn btn-default navbar-btn grosor">REGISTRA</button><br>
-        <h6><hr> O bien <hr></h6>
-        <button type="button" class="btn btn-default navbar-btn grosor">Conviertete en conductor</button>
+    <section class="row affix" id="navBar">
+      <section class="col-md-4">
+        <img src="assets/img/logoForma.png" class="logo img-responsive" alt="">
+      </section>
+      <section class="col-md-8">
+        <ul class="nav nav-pills navbar-right">
+          <li role="presentation" class=""><a href="#">Viaja</a></li>
+          <li role="presentation" class=""><a href="#">Conduce</a></li>
+          <li id="iniciarSesion" role="presentation" class=""><a href="#">Inicia Sesión</a></li>
+        </ul>
       </section>
     </section>
-    <section class="container col-md-12" id="descarga">
-        <section class="col-md-10 textoDescarga">
-          <section class="col-md-4">
-            <img src="assets/img/iphone6Plus.png" class="imagenCel" alt="">
-          </section>
-          <section class="col-md-6">
-            <h4 class="grosor tituloDescarga">Descarga la nueva app</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus et velit dolor. Pellentesque habitant morbi tristique
-              senectus et netus et malesuada fames ac turpis egestas.
-              Quisque non purus magna. Ut malesuada, ante ac vestibulum commodo,
-              ligula nibh ullamcorper sem, eget imperdiet purus nunc sit amet turpis.
-              Aliquam libero eros, rutrum at est a, tincidunt semper libero.
-            </p>
-          </section>
+    <section class="row" id="registro">
+        <section class="col-md-4 col-md-offset-8" id="seccionRegistro">
+          <h3>Disfruta del viaje<br>
+          Eres duseño de tu tiempo</h3>
+          <h4>Viaja con  <img src="assets/img/logoBlanco.png" class="logoBlanco"></h4>
+          <button type="button" class="btn btn-default navbar-btn grosor">REGISTRA</button><br>
+          <h6><hr class="divisorRegistro"> O bien <hr class="divisorRegistro"></h6>
+          <button type="button" class="btn btn-default navbar-btn grosor">Conviertete en conductor</button>
         </section>
     </section>
-    <section class="container col-md-12" id="conduce">
+    <section class="row" id="descarga">
+      <section class="col-md-10 textoDescarga">
+        <section class="col-md-4">
+          <img src="assets/img/iphone6Plus.png" class="imagenCel" alt="">
+        </section>
+        <section class="col-md-6">
+          <h4 class="grosor tituloDescarga">Descarga la nueva app</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus et velit dolor. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas.
+            Quisque non purus magna. Ut malesuada, ante ac vestibulum commodo,
+            ligula nibh ullamcorper sem, eget imperdiet purus nunc sit amet turpis.
+            Aliquam libero eros, rutrum at est a, tincidunt semper libero.
+          </p>
+        </section>
+      </section>
+    </section>
+    <section class="row" id="conduce">
       <section class="col-md-offset-8 col-md-4 textoConduce">
         <h4 class="grosor">Conduce cuando quieras</h4>
         <p>
@@ -54,16 +60,127 @@
         </p>
         <button class="btn btn-default colorBoton" type="submit">Conviértete en conductor</button>
       </section>
-
     </section>
-    <section class="container col-md-12" id="tarifas">
-        <section class="col-md-6">
+    <section class="row" id="tarifas">
+      <section class="col-md-5 col-md-offset-1">
+        <h4 class="grosor">Tarifas</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <form class="form-horizontal">
+          <div class="form-group formulario">
+            <label class="col-sm-2 control-label"><img src="assets/img/shape.png" alt=""></label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control ingresar" id="ubicacion" placeholder="Ingrese su punto de partida">
+            </div>
+          </div>
+          <div class="form-group formulario">
+            <label class="col-sm-2 control-label"><img src="assets/img/shape2.png" alt=""></label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control ingresar" id="ubicacion" placeholder="Ingrese su destino">
+            </div>
+          </div>
+        </form>
+        <section class="row">
+          <button class="btn btn-default col-md-offset-4 grosor" type="submit">¡TRAZAR RUTA!</button>
+        </section>
+      </section>
+      <section class="col-md-5 col-md-offset-1">
+        <img src="assets/img/americalatina.jpg" alt="..." class="img-thumbnail imagenMapa">
+      </section>
+    </section>
+    <footer class="row" id=piePagina>
+      <section class="row contenidoPie">
+        <img src="assets/img/logoBlanco.png" class="logoFinal"><br>
+        <hr>
+      </section>
+      <section class="col-md-2 col-md-offset-1 linksPaginas">
+        <i class="fa fa-facebook" aria-hidden="true"><a href="#"></a></i>
+        <i class="fa fa-twitter" aria-hidden="true"><a href="#"></a></i>
+        <i class="fa fa-linkedin" aria-hidden="true"><a href="#"></a></i>
+        <i class="fa fa-apple" aria-hidden="true"><a href="#"></a></i>
+        <i class="fa fa-play" aria-hidden="true"><a href="#"></a></i>
+      </section>
+      <section class="col-md-3 lista">
+        <p>Viaja</p>
+        <p>Conduce</p>
+        <p>ciudades</p>
+        <p>Entregas</p>
+        <p>Cómo funciona?</p>
+        <p>Paises</p>
+        <p>Seguridad</p>
+      </section>
+      <section class="col-md-3 lista">
+        <p>Viaja</p>
+        <p>Conduce</p>
+        <p>ciudades</p>
+        <p>Entregas</p>
+        <p>Cómo funciona?</p>
+        <p>Paises</p>
+        <p>Seguridad</p>
+      </section>
+      <section class="col-md-3 imagenesPie">
+        <img class="imagenPiePagina" src="assets/img/appstore.png" alt="">
+        <img class="imagenPiePagina" src="assets/img/enBadgeWebGeneric.png" alt="">
+      </section>
+    </footer>
 
-        </section>
-        <section class="col-md-6">
-          <img src="assets/img/americalatina.jpg" alt="..." class="img-thumbnail imagenMapa">
-        </section>
+    <section id="modalIniciarSesion" class="myModal row affix">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group formulario">
+              <label class="col-sm-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control ingresar" id="usuario" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group formulario">
+              <label class="col-sm-2 control-label"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control ingresar" id="contrasenia" placeholder="Password">
+              </div>
+            </div>
+          </form>
+        <div class="modal-footer pieModal">
+          <button type="button" class="btn btn-default iniciarSesion" data-dismiss="modal" id="close">LOGIN</button><br>
+          <h6 class="textoContra">If you forgot your Password <span class="subrayado">Click Here</span></h6>
+        </div>
+      </div>
     </section>
 
+    <section id="modalRegistrarCuenta" class="myModal row affix">
+      <div class="modal-content">
+        <div class="modal-header">
+          <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group formulario">
+              <label class="col-sm-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control ingresar" id="usuario" placeholder="Username">
+              </div>
+            </div>
+            <div class="form-group formulario">
+              <label class="col-sm-2 control-label"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control ingresar" id="contrasenia" placeholder="Password">
+              </div>
+            </div>
+          </form>
+        <div class="modal-footer pieModal">
+          <button type="button" class="btn btn-default iniciarSesion" data-dismiss="modal">LOGIN</button><br>
+          <h6 class="textoContra">If you forgot your Password <span class="subrayado">Click Here</span></h6>
+        </div>
+      </div>
+    </section>
+
+    <script src="bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="assets/js/app.js"></script>
   </body>
 </html>

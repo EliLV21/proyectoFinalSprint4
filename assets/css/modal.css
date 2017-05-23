@@ -1,0 +1,54 @@
+#modalIniciarSesion{
+  display: none;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+#close {
+    color: #f1f1f1 ;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.pieModal{
+  text-align: center;
+}
+.subrayado{
+  text-decoration: underline;
+}
+.iniciarSesion{
+  background-color: gold;
+  font-size: 2em;
+}
+#modalRegistrarCuenta{
+  display: none;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+#close {
+    color: #f1f1f1 ;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
